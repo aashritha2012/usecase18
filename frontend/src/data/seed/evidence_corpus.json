@@ -1,0 +1,125 @@
+{
+  "_synthetic_notice": "Synthetic corpus for demonstration. Items are styled after real source types (PubMed abstracts, FDA label sections, RWE registry studies, internal SOPs) but all content is fictional. In production these are replaced by the indexed client corpus via the AIProvider seam.",
+  "sources": [
+    {
+      "id": "pmid-DEMO-1001",
+      "type": "pubmed",
+      "source_label": "PubMed",
+      "title": "Efficacy and safety of rimcazumab in moderate-to-severe plaque psoriasis: a phase 3 randomized trial (LUMINA-1)",
+      "authors": "Hartmann K, et al.",
+      "journal": "J Dermatol Evidence (demo)",
+      "year": 2024,
+      "citation": "Hartmann K, et al. LUMINA-1. J Dermatol Evidence (demo). 2024.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/DEMO1001",
+      "evidence_type": "clinical_outcomes",
+      "passages": [
+        { "loc": "Results, para 2", "text": "At week 16, PASI 90 was achieved by 71.8% of patients receiving rimcazumab versus 4.9% receiving placebo (p<0.001)." },
+        { "loc": "Results, para 3", "text": "PASI 100 (complete clearance) was reached by 42.3% of rimcazumab patients at week 16." },
+        { "loc": "Results, para 4", "text": "IGA 0/1 response was observed in 78.1% of rimcazumab patients versus 6.1% placebo at week 16." }
+      ]
+    },
+    {
+      "id": "pmid-DEMO-1002",
+      "type": "pubmed",
+      "source_label": "PubMed",
+      "title": "Head-to-head comparison of rimcazumab versus ustekinumab in plaque psoriasis (LUMINA-2)",
+      "authors": "Okafor N, et al.",
+      "journal": "Eur J Clin Derm (demo)",
+      "year": 2024,
+      "citation": "Okafor N, et al. LUMINA-2. Eur J Clin Derm (demo). 2024.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/DEMO1002",
+      "evidence_type": "comparative_efficacy",
+      "passages": [
+        { "loc": "Results, primary endpoint", "text": "PASI 90 at week 16 was superior for rimcazumab versus ustekinumab (71.8% vs 49.7%; treatment difference 22.1 percentage points, 95% CI 15.3–28.9)." },
+        { "loc": "Results, durability", "text": "Response was maintained to week 52 in 88% of week-16 PASI 90 responders." }
+      ]
+    },
+    {
+      "id": "fda-DEMO-LBL-01",
+      "type": "fda_label",
+      "source_label": "FDA Label",
+      "title": "PSORIDEX (rimcazumab) injection — Highlights of Prescribing Information",
+      "year": 2024,
+      "citation": "PSORIDEX (rimcazumab) US Prescribing Information (demo), 2024.",
+      "url": "https://labels.fda.gov/",
+      "evidence_type": "safety",
+      "passages": [
+        { "loc": "§6.1 Adverse Reactions", "text": "The most common adverse reactions (≥1%) were nasopharyngitis, upper respiratory tract infection, and injection-site reactions." },
+        { "loc": "§5.1 Warnings", "text": "Serious infections were reported in 1.1% of treated patients over 52 weeks; evaluate for latent tuberculosis prior to initiation." },
+        { "loc": "§8.1 Pregnancy", "text": "Available data are insufficient to establish a drug-associated risk; monoclonal antibodies are actively transported across the placenta in the third trimester." }
+      ]
+    },
+    {
+      "id": "fda-DEMO-LBL-02",
+      "type": "fda_label",
+      "source_label": "FDA Label",
+      "title": "PSORIDEX (rimcazumab) — Dosage and Administration",
+      "year": 2024,
+      "citation": "PSORIDEX (rimcazumab) US Prescribing Information §2 (demo), 2024.",
+      "url": "https://labels.fda.gov/",
+      "evidence_type": "dosing",
+      "passages": [
+        { "loc": "§2.1 Recommended Dosage", "text": "150 mg administered by subcutaneous injection at weeks 0 and 4, followed by every 12 weeks thereafter." }
+      ]
+    },
+    {
+      "id": "rwe-DEMO-REG-01",
+      "type": "rwe",
+      "source_label": "RWE Registry",
+      "title": "Real-world effectiveness and persistence of rimcazumab: 24-month analysis from the DERMA-REAL registry",
+      "authors": "Bianchi L, et al.",
+      "year": 2025,
+      "citation": "Bianchi L, et al. DERMA-REAL registry (demo). 2025.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/DEMO2001",
+      "evidence_type": "real_world_evidence",
+      "passages": [
+        { "loc": "Persistence", "text": "24-month treatment persistence was 79.4%, higher than the registry biologic average of 64.2%." },
+        { "loc": "Effectiveness", "text": "In routine practice, 66.9% of patients achieved absolute PASI ≤2 by month 6, consistent with trial-based estimates." },
+        { "loc": "Adherence", "text": "The every-12-week maintenance schedule was associated with a 23% lower missed-dose rate versus every-8-week comparators." }
+      ]
+    },
+    {
+      "id": "rwe-DEMO-COI-01",
+      "type": "rwe",
+      "source_label": "RWE / Cost-of-Illness",
+      "title": "Burden of moderate-to-severe plaque psoriasis in Germany: direct and indirect costs",
+      "authors": "Weber S, et al.",
+      "year": 2023,
+      "citation": "Weber S, et al. Burden of psoriasis in Germany (demo). 2023.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/DEMO3001",
+      "evidence_type": "burden_of_disease",
+      "passages": [
+        { "loc": "Epidemiology", "text": "Plaque psoriasis affects approximately 2.0% of the German adult population; an estimated 25% have moderate-to-severe disease." },
+        { "loc": "Cost", "text": "Mean annual direct cost per moderate-to-severe patient was estimated at €7,180, with indirect (productivity) costs adding a further €3,540." },
+        { "loc": "Unmet need", "text": "Approximately 30% of biologic-eligible patients do not achieve sustained clear/almost-clear skin on first-line systemic therapy." }
+      ]
+    },
+    {
+      "id": "sop-DEMO-EV-01",
+      "type": "sop",
+      "source_label": "Internal SOP",
+      "title": "SOP-EV-014: Evidence traceability and claim-substantiation standard for payer submissions",
+      "year": 2024,
+      "citation": "SOP-EV-014 (demo internal standard), 2024.",
+      "url": "internal://sop/EV-014",
+      "evidence_type": "process",
+      "passages": [
+        { "loc": "§3 Traceability", "text": "Every efficacy or safety claim in a payer dossier must be linked to a primary source with document ID and locator; unsourced claims may not be submitted." },
+        { "loc": "§5 Local adaptation", "text": "Global value messages must be reviewed against the local comparator and endpoint preferences of the target HTA body before inclusion." }
+      ]
+    },
+    {
+      "id": "sop-DEMO-EV-02",
+      "type": "sop",
+      "source_label": "Internal SOP",
+      "title": "SOP-EV-021: Value message framing library for European HTA submissions",
+      "year": 2024,
+      "citation": "SOP-EV-021 (demo internal standard), 2024.",
+      "url": "internal://sop/EV-021",
+      "evidence_type": "process",
+      "passages": [
+        { "loc": "§2 G-BA framing", "text": "For G-BA/IQWiG submissions, prioritise added benefit versus the appropriate comparator therapy (zVT) and patient-relevant endpoints (clearance, quality of life, serious adverse events)." }
+      ]
+    }
+  ]
+}

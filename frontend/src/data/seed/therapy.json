@@ -1,0 +1,25 @@
+{
+  "_synthetic_notice": "ALL DATA IN THIS FILE IS SYNTHETIC AND FOR DEMONSTRATION ONLY. The molecule 'rimcazumab' / brand 'Psoridex' is fictional. No real clinical, safety, or economic claim is made or implied. Replace with client evidence after NDA/GxP controls.",
+  "therapy": {
+    "id": "thx-psoridex",
+    "brand_name": "Psoridex",
+    "inn": "rimcazumab",
+    "modality": "Anti-IL-23p19 monoclonal antibody",
+    "indication": "Moderate-to-severe plaque psoriasis in adults who are candidates for systemic therapy",
+    "route": "Subcutaneous injection",
+    "dosing": "150 mg at weeks 0 and 4, then every 12 weeks",
+    "sponsor": "Illustrative Sponsor (demo)",
+    "atc_code": "L04AC-demo",
+    "comparators": [
+      { "id": "cmp-ustek", "name": "Ustekinumab (class reference)", "class": "Anti-IL-12/23" },
+      { "id": "cmp-adali", "name": "Adalimumab (established biologic)", "class": "Anti-TNF" },
+      { "id": "cmp-mtx", "name": "Methotrexate (conventional systemic)", "class": "csDMARD" }
+    ],
+    "key_endpoints": [
+      { "id": "pasi90", "label": "PASI 90", "description": "≥90% improvement in Psoriasis Area and Severity Index", "week": 16 },
+      { "id": "pasi100", "label": "PASI 100", "description": "Complete skin clearance", "week": 16 },
+      { "id": "iga01", "label": "IGA 0/1", "description": "Investigator Global Assessment clear/almost clear", "week": 16 },
+      { "id": "dlqi", "label": "DLQI 0/1", "description": "Dermatology Life Quality Index — no impact on quality of life", "week": 16 }
+    ]
+  }
+}

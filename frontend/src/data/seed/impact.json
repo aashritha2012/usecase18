@@ -1,0 +1,47 @@
+{
+  "_synthetic_notice": "Synthetic impact metrics for the demo dashboard. Illustrative of the value story; validate against real workflows in production.",
+  "turnaround": {
+    "baseline_days": 15,
+    "agent_assisted_days": 11,
+    "reduction_pct": 27,
+    "reduction_band": "20–30%",
+    "unit": "business days to first defensible draft"
+  },
+  "effort_split": {
+    "before": [
+      { "activity": "Finding & retrieving evidence", "pct": 45 },
+      { "activity": "Reformatting & mapping to questions", "pct": 25 },
+      { "activity": "Cross-checking traceability", "pct": 15 },
+      { "activity": "Expert synthesis & judgement", "pct": 15 }
+    ],
+    "after": [
+      { "activity": "Finding & retrieving evidence", "pct": 8 },
+      { "activity": "Reformatting & mapping to questions", "pct": 7 },
+      { "activity": "Cross-checking traceability", "pct": 10 },
+      { "activity": "Expert synthesis & judgement", "pct": 55 },
+      { "activity": "Review & approval", "pct": 20 }
+    ]
+  },
+  "kpis": [
+    { "id": "turnaround", "label": "Faster turnaround", "value": 27, "suffix": "%", "trend": "down_is_good", "caption": "vs. manual baseline" },
+    { "id": "questions", "label": "Payer questions mapped", "value": 8, "suffix": "", "caption": "this dossier" },
+    { "id": "coverage", "label": "Questions answered", "value": 75, "suffix": "%", "caption": "6 of 8 fully sourced" },
+    { "id": "citations", "label": "Traceable citations", "value": 13, "suffix": "", "caption": "every claim sourced" },
+    { "id": "gaps", "label": "Gaps flagged", "value": 2, "suffix": "", "caption": "honest, not hallucinated" },
+    { "id": "sources", "label": "Sources indexed", "value": 8, "suffix": "", "caption": "PubMed · FDA · RWE · SOP" }
+  ],
+  "throughput_projection": [
+    { "period": "Q1", "manual": 6, "agent": 8 },
+    { "period": "Q2", "manual": 6, "agent": 9 },
+    { "period": "Q3", "manual": 7, "agent": 10 },
+    { "period": "Q4", "manual": 6, "agent": 11 }
+  ],
+  "roi": {
+    "analyst_loaded_day_cost_eur": 1200,
+    "dossiers_per_year": 26,
+    "days_saved_per_dossier": 4,
+    "annual_days_saved": 104,
+    "annual_value_eur": 124800,
+    "note": "Illustrative: 26 dossiers × 4 days saved × €1,200 loaded analyst/day. Excludes faster time-to-reimbursement upside."
+  }
+}

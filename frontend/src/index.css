@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================================
+   Design tokens — enterprise healthcare / market-access palette
+   Dark theme is the demo default; light provided for completeness.
+   ============================================================ */
+:root,
+.dark {
+  --bg: 9 14 26;            /* deep slate navy */
+  --surface: 17 24 40;
+  --surface-2: 23 32 52;
+  --border: 38 50 76;
+  --text: 226 232 240;
+  --muted: 148 163 184;
+  --faint: 100 116 139;
+  --primary: 45 212 191;    /* teal — trust, clinical */
+  --primary-soft: 20 74 74;
+  --accent: 129 140 248;    /* indigo */
+  --answered: 52 211 153;   /* green */
+  --gap: 251 191 36;        /* amber */
+  --critical: 248 113 113;  /* red */
+}
+
+.light {
+  --bg: 244 247 252;
+  --surface: 255 255 255;
+  --surface-2: 248 250 253;
+  --border: 224 231 240;
+  --text: 15 23 42;
+  --muted: 71 85 105;
+  --faint: 148 163 184;
+  --primary: 13 148 136;
+  --primary-soft: 204 251 241;
+  --accent: 79 70 229;
+  --answered: 5 150 105;
+  --gap: 217 119 6;
+  --critical: 220 38 38;
+}
+
+* { border-color: rgb(var(--border)); }
+
+html, body, #root { height: 100%; }
+
+body {
+  background: rgb(var(--bg));
+  color: rgb(var(--text));
+  font-family: theme("fontFamily.sans");
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Subtle atmospheric backdrop for the app */
+.app-bg::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background:
+    radial-gradient(60rem 40rem at 85% -10%, rgb(var(--primary) / 0.10), transparent 60%),
+    radial-gradient(50rem 40rem at -10% 10%, rgb(var(--accent) / 0.08), transparent 55%);
+}
+
+@layer components {
+  .card {
+    @apply rounded-2xl border border-border bg-surface/80 backdrop-blur-sm shadow-card;
+  }
+  .chip {
+    @apply inline-flex items-center gap-1.5 rounded-full border border-border px-2.5 py-1 text-xs font-medium text-muted;
+  }
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl px-4 py-2.5 text-sm font-semibold transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+  .btn-primary {
+    @apply btn bg-primary text-bg hover:brightness-110 hover:shadow-glow active:scale-[0.98];
+  }
+  .btn-ghost {
+    @apply btn border border-border text-text hover:bg-surface-2;
+  }
+  .stat-value { @apply text-3xl font-bold tracking-tight tabular-nums; }
+  .scroll-thin { scrollbar-width: thin; scrollbar-color: rgb(var(--border)) transparent; }
+  .scroll-thin::-webkit-scrollbar { width: 8px; height: 8px; }
+  .scroll-thin::-webkit-scrollbar-thumb { background: rgb(var(--border)); border-radius: 8px; }
+}
+
+/* Respect users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+/* Skeleton shimmer */
+.skeleton {
+  position: relative;
+  overflow: hidden;
+  background: rgb(var(--surface-2));
+}
+.skeleton::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  transform: translateX(-100%);
+  background: linear-gradient(90deg, transparent, rgb(var(--border) / 0.6), transparent);
+  animation: shimmer 1.6s infinite;
+}

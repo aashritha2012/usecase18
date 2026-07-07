@@ -1,0 +1,27 @@
+{
+  "_synthetic_notice": "Synthetic payer question set for demonstration.",
+  "payer": {
+    "id": "payer-gba-de",
+    "name": "G-BA / IQWiG",
+    "market": "Germany",
+    "region": "EU",
+    "flag": "DE",
+    "framing": "Added benefit versus appropriate comparator therapy (zVT); patient-relevant endpoints prioritised.",
+    "deadline_days": 21
+  },
+  "question_set": {
+    "id": "qset-gba-psoridex-2026",
+    "title": "G-BA early benefit assessment — Psoridex (rimcazumab)",
+    "received": "2026-06-30",
+    "questions": [
+      { "id": "q1", "order": 1, "intent": "comparative_efficacy", "text": "What is the added clinical benefit of rimcazumab versus the appropriate comparator therapy on skin clearance?" },
+      { "id": "q2", "order": 2, "intent": "clinical_outcomes", "text": "What proportion of patients achieve complete skin clearance (PASI 100 / IGA 0) and how durable is the response?" },
+      { "id": "q3", "order": 3, "intent": "quality_of_life", "text": "What is the effect on health-related quality of life (DLQI) in the target population?" },
+      { "id": "q4", "order": 4, "intent": "safety", "text": "What is the safety and tolerability profile, including serious infections, over 52 weeks?" },
+      { "id": "q5", "order": 5, "intent": "real_world_evidence", "text": "Is trial efficacy reproduced in routine clinical practice, and what is treatment persistence?" },
+      { "id": "q6", "order": 6, "intent": "burden_of_disease", "text": "What is the burden of moderate-to-severe plaque psoriasis in the German population and the unmet need?" },
+      { "id": "q7", "order": 7, "intent": "dosing_adherence", "text": "How does the maintenance dosing schedule affect adherence and administration burden?" },
+      { "id": "q8", "order": 8, "intent": "budget_impact", "text": "What is the expected budget impact relative to the comparator over a 3-year horizon?" }
+    ]
+  }
+}
